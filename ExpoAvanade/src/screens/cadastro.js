@@ -75,20 +75,24 @@ const styles = StyleSheet.create({
     width: 220,
     height: 60,
     marginRight: 65,
+    
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
   },
   mainImage: {
     marginTop: 8,
+    marginLeft: 10,
     width: 20,
     height: 20,
   },
   mainTitle: {
     marginTop: 10,
-    marginLeft: 15,
+    marginLeft: 45,
     fontSize: 36,
     color: '#000000',
+    fontFamily: 'IBMPlexMono_700Bold',
+
   },
   mainFormSpace: {
     height: 510,
@@ -121,19 +125,19 @@ const styles = StyleSheet.create({
     height: 20,
   },
   mainBtnText: {
-    fontSize: 14,
-    // fontFamily: 'IBMPlexMono-Bold',
+    fontSize: 25,
+    fontFamily: 'IBMPlexMono_700Bold',
     color: '#000000'
   },
   mainTextSpace: {
-    marginTop: 20,
+    marginTop: 30,
     height: 16,
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   mainText: {
     fontSize: 14,
-    // fontFamily: 'ABeeZee-Regular',
+    fontFamily: 'ABeeZee_400Regular',
     color: '#000000'
   },
 });

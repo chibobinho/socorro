@@ -8,6 +8,7 @@ import {
   TextInput,
 } from 'react-native';
 
+
 import api from '../services/api';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -23,6 +24,15 @@ class Login extends Component {
       Email: '',
     };
   }
+
+  // let[fontsLoaded, error] = useFonts({
+  //   ABeeZee_400Regular,
+  //   ABeeZee_400Regular_Italic 
+  // });
+
+  // if (!fontsLoaded) {
+  //   return <AppLoading />
+  // }
 
   // realizarLogin = async () => {
   //   try {
@@ -172,8 +182,8 @@ const styles = StyleSheet.create({
     marginTop: '8%',
   },
   mainBtnText: {
-    fontSize: 14,
-    //fontFamily: '',
+    fontSize: 25,
+    fontFamily: 'IBMPlexMono_700Bold',
     color: '#000000'
   },
   MainErroMessage: {
@@ -188,7 +198,7 @@ const styles = StyleSheet.create({
   },
   mainText: {
     fontSize: 14,
-    // fontFamily: 'ABeeZee',
+    fontFamily: 'ABeeZee_400Regular',
     color: '#000000',
   },
 });

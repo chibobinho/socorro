@@ -14,37 +14,37 @@ export default class TutorialDestrava extends Component {
     return (
       <View style={styles.main}>
         <View style={styles.mainHeader}>
-          <View style={styles.mainTituloSpace}>
-            <TouchableOpacity onPress={this.goBack}>
+          <View style={styles.mainTitleSpace}>
+            {/* <TouchableOpacity onPress={this.goBack}>
               <Image style={styles.mainBtnVoltar} source={require('../../assets/img/Icone_voltar.png')} />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
 
             <Text style={styles.mainHeaderText}>Tutorial</Text>
           </View>
         </View>
 
         <View style={styles.mainBody}>
-          <View style={styles.mainBodyIntrucoes}>
+          <View style={styles.mainBodyInstructions}>
             <Text style={styles.mainBodyTitle}>Siga essas instruções:</Text>
             <Text style={styles.mainBodyText}>Usar o sistema é muito fácil! Veja aqui algumas dicas para te ajudar.</Text>
           </View>
 
-          <View style={styles.mainBodyPassos}>
-            <View style={styles.passoInfo}>
+          <View style={styles.mainBodySteps}>
+            <View style={styles.stepInfo}>
               <View style={styles.mainBodyCircle}>
                 <Text style={styles.mainBodyText}>1°</Text>
               </View>
               <Text style={styles.mainBodyText}>Lorem Ipsum is simply dummy</Text>
             </View>
 
-            <View style={styles.passoInfo}>
+            <View style={styles.stepInfo}>
               <View style={styles.mainBodyCircle}>
                 <Text style={styles.mainBodyText}>2°</Text>
               </View>
               <Text style={styles.mainBodyText}>Lorem Ipsum is simply dummy text of the printing</Text>
             </View>
 
-            <View style={styles.passoInfo}>
+            <View style={styles.stepInfo}>
               <View style={styles.mainBodyCircle}>
                 <Text style={styles.mainBodyText}>3°</Text>
               </View>
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  mainTituloSpace: {
+  mainTitleSpace: {
     width: 300,
     display: 'flex',
     flexDirection: 'row',
@@ -86,12 +86,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     marginRight: 100,
   },
-  mainBtnVoltar: {
+  mainBtnBack: {
     width: 20,
     height: 20,
   },
   mainHeaderText: {
     //fontFamily:
+    marginLeft: 100,
     fontSize: 36,
     fontWeight: 'bold',
     color: '#fff',
@@ -107,7 +108,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#fff',
   },
-  mainBodyIntrucoes: {
+  mainBodyInstructions: {
     maxWidth: 264,
     marginLeft: 20,
     marginBottom: 20,
@@ -117,11 +118,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#fff',
   },
-  mainBodyPassos: {
+  mainBodySteps: {
     maxWidth: 300,
     marginRight: 20,
   },
-  passoInfo: {
+  stepInfo: {
     flexDirection: 'row',
     marginTop: 10,
   },
@@ -146,6 +147,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#F3BC2C',
     alignItems: 'center',
     justifyContent: 'center',
+    borderRadius: 5,
+
   },
   footerBtnShadow: {
     shadowColor: '#rgba(0, 0, 0, 0.25)',
@@ -169,6 +172,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#F3BC2C',
     alignItems: 'center',
     justifyContent: 'center',
+    borderRadius: 5,
+
   },
   footerMinutesText: {
     //fontFamily:

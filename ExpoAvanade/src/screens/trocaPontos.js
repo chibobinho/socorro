@@ -16,9 +16,9 @@ class TrocaPontos extends Component {
     return (
       <View style={styles.main}>
         <View style={styles.mainHeader}>
-          <View style={styles.mainTituloSpace}>
+          <View style={styles.mainTitleSpace}>
             <TouchableOpacity onPress={this.goBack}>
-              <Image style={styles.mainBtnVoltar} source={require('../../assets/img/Icone_voltar.png')} />
+              <Image style={styles.mainBtnBack} source={require('../../assets/img/Icone_voltar.png')} />
             </TouchableOpacity>
             <Text style={styles.mainHeaderText}>Trocar pontos</Text>
           </View>
@@ -28,47 +28,47 @@ class TrocaPontos extends Component {
 
         <View style={styles.mainBody}>
           <View style={styles.mainCards}>
-            <View style={styles.cardPontos}>
+            <View style={styles.cardPoints}>
               <View>
-                <Text style={styles.cardPontosText}>15 pontos</Text>
-                <Text style={styles.cardTextSaldo}>R$1,00</Text>
+                <Text style={styles.cardPointsText}>15 pontos</Text>
+                <Text style={styles.cardTextBalance}>R$1,00</Text>
               </View>
 
-              <TouchableOpacity style={styles.btnPontos}>
-                <Text style={styles.cardPontosText}>Trocar</Text>
+              <TouchableOpacity style={styles.btnPoints}>
+                <Text style={styles.cardPointsText}>Trocar</Text>
               </TouchableOpacity>
             </View>
 
-            <View style={styles.cardPontos}>
+            <View style={styles.cardPoints}>
               <View>
-                <Text style={styles.cardPontosText}>30 pontos</Text>
-                <Text style={styles.cardTextSaldo}>R$2,00</Text>
+                <Text style={styles.cardPointsText}>30 pontos</Text>
+                <Text style={styles.cardTextBalance}>R$2,00</Text>
               </View>
 
-              <TouchableOpacity style={styles.btnPontos}>
-                <Text style={styles.cardPontosText}>Trocar</Text>
+              <TouchableOpacity style={styles.btnPoints}>
+                <Text style={styles.cardPointsText}>Trocar</Text>
               </TouchableOpacity>
             </View>
 
-            <View style={styles.cardPontos}>
+            <View style={styles.cardPoints}>
               <View>
-                <Text style={styles.cardPontosText}>45 pontos</Text>
-                <Text style={styles.cardTextSaldo}>R$3,00</Text>
+                <Text style={styles.cardPointsText}>45 pontos</Text>
+                <Text style={styles.cardTextBalance}>R$3,00</Text>
               </View>
 
-              <TouchableOpacity style={styles.btnPontos}>
-                <Text style={styles.cardPontosText}>Trocar</Text>
+              <TouchableOpacity style={styles.btnPoints}>
+                <Text style={styles.cardPointsText}>Trocar</Text>
               </TouchableOpacity>
             </View>
 
-            <View style={styles.cardPontos}>
+            <View style={styles.cardPoints}>
               <View>
-                <Text style={styles.cardPontosText}>60 pontos</Text>
-                <Text style={styles.cardTextSaldo}>R$4,00</Text>
+                <Text style={styles.cardPointsText}>60 pontos</Text>
+                <Text style={styles.cardTextBalance}>R$4,00</Text>
               </View>
 
-              <TouchableOpacity style={styles.btnPontos}>
-                <Text style={styles.cardPontosText}>Trocar</Text>
+              <TouchableOpacity style={styles.btnPoints}>
+                <Text style={styles.cardPointsText}>Trocar</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  mainTituloSpace: {
+  mainTitleSpace: {
     width: 300,
     display: 'flex',
     flexDirection: 'row',
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     marginRight: 40,
   },
-  mainBtnVoltar: {
+  mainBtnBack: {
     width: 20,
     height: 20,
   },
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     paddingBottom: 150,
   },
-  cardPontos: {
+  cardPoints: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
@@ -130,18 +130,20 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     borderColor: '#F3BC2C',
     borderWidth: 2,
+    borderRadius: 5,
+
   },
-  cardPontosText: {
+  cardPointsText: {
     fontSize: 20,
     //fontFamily: '',
     color: '#000',
   },
-  cardTextSaldo: {
+  cardTextBalance: {
     fontSize: 14,
     //fontFamily: '',
     color: '#333',
   },
-  btnPontos: {
+  btnPoints: {
     backgroundColor: '#F3BC2C',
     width: 116,
     height: 37,

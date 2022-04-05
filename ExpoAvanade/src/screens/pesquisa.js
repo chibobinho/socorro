@@ -21,13 +21,18 @@ export default class Pesquisa extends Component {
                             <TouchableOpacity style={styles.mainBtnBack} onPress={this.goBack}>
                                 <Image style={styles.mainImage} source={require('../../assets/img/Icone_voltar.png')} />
                             </TouchableOpacity>
-                            <TextInput style={styles.mainMenuInput}
+                            {/* <TextInput style={styles.mainMenuInput}
                                 placeholder='Para onde?'
                                 placeholderTextColor='#000000'>
                             </TextInput>
                             <TouchableOpacity style={styles.mainBtnTest} onPress={this.realizarBusca}>
                                 <Text style={styles.mainBtnText}>OO</Text>
-                            </TouchableOpacity>
+                            </TouchableOpacity> */}
+                            <TextInput style={styles.mainMenuInput}
+                                placeholder='Para onde?'
+                                placeholderTextColor='#000000'
+                            >
+                            </TextInput>
                         </View>
                     </View>
 
@@ -69,9 +74,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#F3BC2C',
     },
     mainDiv: {
-        width: 394,
+        marginLeft: 15,
+        width: 350,
         height: 70,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         alignItems: 'center',
         flexDirection: 'row',
     },
@@ -108,4 +114,7 @@ const styles = StyleSheet.create({
         paddingLeft: 15,
         color: '#000000'
     },
+    mainBtnText: {
+        marginTop: 12,
+    }
 });

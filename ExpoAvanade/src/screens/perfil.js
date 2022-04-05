@@ -70,7 +70,7 @@ export default class Perfil extends Component {
         <View style={styles.mainBody}>
           <View style={styles.mainBodyInfo}>
 
-            <Image style={styles.imgPerfil} source={require('../../assets/img/profile.png')} />
+            <Image style={styles.imageProfile} source={require('../../assets/img/profile.png')} />
 
             <Text style={styles.mainBodyTitle}>{this.state.nome}</Text>
             <Text style={styles.mainBodyText}>{this.state.email}</Text>
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   mainBodyInfo: {
     alignItems: 'center',
   },
-  imgPerfil: {
+  imageProfile: {
     borderColor: '#F3BC2C',
     borderRadius: 67,
     borderWidth: 3,
@@ -180,8 +180,5 @@ const styles = StyleSheet.create({
   mainBtnVoltar: {
     width: 20,
     height: 20,
-  },
-  mainImagem: {
-    marginTop: 5,
   },
 });

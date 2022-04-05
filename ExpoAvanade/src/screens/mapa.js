@@ -40,13 +40,16 @@ export default class Mapa extends Component {
           <View style={styles.mainMenuNav}>
 
             <View style={styles.mainDiv}>
-              
-              <TextInput style={styles.mainMenuInput}
+
+              {/* <TextInput style={styles.mainMenuInput}
                 placeholder='Para onde?'
                 placeholderTextColor='#000000'>
               </TextInput>
               <TouchableOpacity style={styles.mainBtnTest} onPress={this.realizarBusca}>
                 <Text style={styles.mainBtnText}>OO</Text>
+              </TouchableOpacity> */}
+              <TouchableOpacity style={styles.mainMenuInput} onPress={this.realizarBusca}>
+                <Text style={styles.mainBtnText}>Para onde?</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -101,4 +104,7 @@ const styles = StyleSheet.create({
     borderColor: '#000000',
     backgroundColor: '#ffffff',
   },
+  mainBtnText: {
+    marginTop: 12,
+  }
 });

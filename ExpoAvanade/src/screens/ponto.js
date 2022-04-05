@@ -71,37 +71,39 @@ export default class Ponto extends Component {
     return (
       <ScrollView>
         <View style={styles.main}>
-          <ImageBackground style={styles.imgPonto} source={require('../../assets/img/mapa.png')}>
-            <TouchableOpacity style={styles.mainBtnVoltar} onPress={this.goBack}>
-              <Image style={styles.mainBtnVoltar} source={require('../../assets/img/Icone_voltar.png')} />
+          <ImageBackground style={styles.mainImage} source={require('../../assets/img/mapa.png')}>
+            <TouchableOpacity style={styles.mainBtnBack} onPress={this.goBack}>
+              <Image style={styles.mainBtnBack} source={require('../../assets/img/Icone_voltar.png')} />
             </TouchableOpacity>
-            <View style={styles.alinhamentoRetangulo}>
-              <View style={styles.retanguloBicicletario} />
+
+            <View style={styles.retangleAlignment}>
+              <View style={styles.retangleBicicletario} />
             </View>
           </ImageBackground>
+
           <View style={styles.mainBody}>
-            <View style={styles.espacoTitulo}>
-              <Text style={[styles.tituloBicicletario, styles.sombra]}>{this.state.nome}</Text>
+            <View style={styles.titleSpace}>
+              <Text style={[styles.titleBicletario, styles.sombra]}>{this.state.nome}</Text>
             </View>
             <View style={styles.infoBicicletario}>
               <View>
-                <Text style={styles.tituloInfo}>Endereço:</Text>
-                <Text style={styles.textoInfo}>{this.state.rua}, {this.state.numero} - {this.state.bairro}, {this.state.cidade}, {this.state.CEP}</Text>
+                <Text style={styles.titleInfo}>Endereço:</Text>
+                <Text style={styles.textInfo}>{this.state.rua}, {this.state.numero} - {this.state.bairro}, {this.state.cidade}, {this.state.CEP}</Text>
               </View>
               <View>
-                <Text style={styles.tituloInfo}>Áreas atendidas:</Text>
-                <Text style={styles.textoInfo}>{this.state.cidade}</Text>
+                <Text style={styles.titleInfo}>Áreas atendidas:</Text>
+                <Text style={styles.textInfo}>{this.state.cidade}</Text>
               </View>
               <View>
-                <Text style={styles.tituloInfo}>Horas:</Text>
-                <Text style={styles.textoInfo}>Aberto: {this.state.horarioAberto} ⋅ Fecha às {this.state.horarioFechado}</Text>
+                <Text style={styles.titleInfo}>Horas:</Text>
+                <Text style={styles.textInfo}>Aberto: {this.state.horarioAberto} ⋅ Fecha às {this.state.horarioFechado}</Text>
               </View>
               <View>
-                <Text style={styles.tituloInfo}>Vagas:</Text>
-                <Text style={styles.textoInfo}>Disponiveis = {this.state.vagaDisponivel}</Text>
-                <Text style={styles.textoInfo}>Totais = {this.state.quantidadeVaga}</Text>
+                <Text style={styles.titleInfo}>Vagas:</Text>
+                <Text style={styles.textInfo}>Disponiveis = {this.state.vagaDisponivel}</Text>
+                <Text style={styles.textInfo}>Totais = {this.state.quantidadeVaga}</Text>
               </View>
-              <View style={styles.btnPosicionamento}>
+              <View style={styles.btnPosition}>
                 <TouchableOpacity style={styles.btnPonto} onPress={() => this.props.navigation.navigate("Vaga")}>
                   <Text style={styles.cardPontosText}>Estou no ponto</Text>
                 </TouchableOpacity>
@@ -117,22 +119,22 @@ export default class Ponto extends Component {
 const styles = StyleSheet.create({
   // conteúdo da main
   main: {
-    flex: 1,
+    flex: 0.4,
     backgroundColor: '#CECED7',
   },
 
-  mainBtnVoltar: {
+  mainBtnBack: {
     width: 20,
     height: 20,
     marginLeft: 13,
-    marginTop: 7
+    marginTop: 20
   },
 
-  imgPonto: {
+  mainImage: {
     height: 270,
   },
 
-  retanguloBicicletario: {
+  retangleBicicletario: {
     width: 74,
     height: 7,
     backgroundColor: '#C4C4C4',
@@ -140,17 +142,17 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
 
-  alinhamentoRetangulo: {
+  retangleAlignment: {
     alignItems: 'center',
     marginTop: '58%',
   },
 
   mainBody: {
-    flex: 1,
+    height: 586,
     justifyContent: 'space-between',
   },
 
-  espacoTitulo: {
+  titleSpace: {
     height: 103,
     borderRadius: 5,
     alignItems: 'center',
@@ -161,7 +163,7 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
 
-  tituloBicicletario: {
+  titleBicicletario: {
     //fontFamily: '',
     fontSize: 30,
     fontWeight: 'bold',
@@ -177,19 +179,19 @@ const styles = StyleSheet.create({
     paddingTop: 10,
   },
 
-  tituloInfo: {
+  titleInfo: {
     //fontFamily: '',
     fontSize: 25,
     color: '#000',
   },
 
-  textoInfo: {
+  textInfo: {
     //fontFamily: '',
     fontSize: 18,
     color: '#000',
   },
 
-  btnPosicionamento: {
+  btnPosition: {
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -208,6 +210,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#000',
     textAlign: 'center',
-    fontFamily: 'ABeeZee-Regular'
+    // fontFamily: 'ABeeZee-Regular'
   },
 });

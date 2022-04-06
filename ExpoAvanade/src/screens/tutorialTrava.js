@@ -92,10 +92,9 @@ const styles = StyleSheet.create({
     marginLeft: 25,
   },
   mainHeaderText: {
-    //fontFamily:
-    // marginLeft: 100,
+    fontFamily: 'IBMPlexMono_700Bold',
+    marginLeft: 10,
     fontSize: 36,
-    fontWeight: 'bold',
     color: '#fff',
   },
   mainBody: {
@@ -104,9 +103,8 @@ const styles = StyleSheet.create({
     marginBottom: 110,
   },
   mainBodyTitle: {
-    //fontFamily:
+    fontFamily: 'ABeeZee_400Regular',
     fontSize: 25,
-    fontWeight: 'bold',
     color: '#fff',
   },
   mainBodyInstructions: {
@@ -115,7 +113,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   mainBodyText: {
-    //fontFamily:
+    fontFamily: 'ABeeZee_400Regular', 
     fontSize: 20,
     color: '#fff',
   },
@@ -152,7 +150,7 @@ const styles = StyleSheet.create({
   },
   footerBtnShadow: {
     shadowColor: '#rgba(0, 0, 0, 0.25)',
-    shadowOffset: {width: -3, height: -4},
+    shadowOffset: { width: -3, height: -4 },
     shadowOpacity: 1,
     shadowRadius: 4,
     /* shadowColor: 'rgba(132, 132, 156, 0.3)',
@@ -161,9 +159,8 @@ const styles = StyleSheet.create({
     shadowRadius: 4, */
   },
   footerBtnText: {
-    //fontFamily:
+    fontFamily: 'IBMPlexMono_700Bold', 
     fontSize: 24,
-    fontWeight: 'bold',
     color: '#000',
   },
   mainFooterMinutes: {
@@ -176,7 +173,7 @@ const styles = StyleSheet.create({
 
   },
   footerMinutesText: {
-    //fontFamily:
+    fontFamily: 'IBMPlexMono_700Bold', 
     fontSize: 18,
     color: '#000',
   },

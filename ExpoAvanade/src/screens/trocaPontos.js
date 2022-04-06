@@ -35,7 +35,7 @@ class TrocaPontos extends Component {
               </View>
 
               <TouchableOpacity style={styles.btnPoints}>
-                <Text style={styles.cardPointsText}>Trocar</Text>
+                <Text style={styles.cardPointsBtnText}>Trocar</Text>
               </TouchableOpacity>
             </View>
 
@@ -46,7 +46,7 @@ class TrocaPontos extends Component {
               </View>
 
               <TouchableOpacity style={styles.btnPoints}>
-                <Text style={styles.cardPointsText}>Trocar</Text>
+                <Text style={styles.cardPointsBtnText}>Trocar</Text>
               </TouchableOpacity>
             </View>
 
@@ -57,7 +57,7 @@ class TrocaPontos extends Component {
               </View>
 
               <TouchableOpacity style={styles.btnPoints}>
-                <Text style={styles.cardPointsText}>Trocar</Text>
+                <Text style={styles.cardPointsBtnText}>Trocar</Text>
               </TouchableOpacity>
             </View>
 
@@ -68,7 +68,7 @@ class TrocaPontos extends Component {
               </View>
 
               <TouchableOpacity style={styles.btnPoints}>
-                <Text style={styles.cardPointsText}>Trocar</Text>
+                <Text style={styles.cardPointsBtnText}>Trocar</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -101,9 +101,7 @@ const styles = StyleSheet.create({
     height: 20,
   },
   mainHeaderText: {
-    //fontFamily: '',
-    fontSize: 36,
-    fontWeight: 'bold',
+    fontFamily: 'IBMPlexMono_700Bold',    fontSize: 36,
     color: '#333',
   },
   mainHeaderLine: {
@@ -135,13 +133,11 @@ const styles = StyleSheet.create({
   },
   cardPointsText: {
     fontSize: 20,
-    //fontFamily: '',
-    color: '#000',
+    fontFamily: 'ABeeZee_400Regular',    color: '#000',
   },
   cardTextBalance: {
     fontSize: 14,
-    //fontFamily: '',
-    color: '#333',
+    fontFamily: 'ABeeZee_400Regular',    color: '#333',
   },
   btnPoints: {
     backgroundColor: '#F3BC2C',
@@ -150,6 +146,10 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  cardPointsBtnText: {
+    fontSize: 20,
+    fontFamily: 'IBMPlexMono_700Bold',    color: '#000',
   },
 });
 

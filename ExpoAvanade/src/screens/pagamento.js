@@ -148,6 +148,7 @@ const styles = StyleSheet.create({
     },
 
     mainTitle: {
+        fontFamily: 'IBMPlexMono_700Bold',
         color: '#000000',
         fontSize: 30,
         paddingTop: 5,
@@ -181,12 +182,12 @@ const styles = StyleSheet.create({
     boxTextTitle: {
         fontSize: 25,
         color: '#000000',
-        // fontFamily: 'IBMPlexMono-Bold'
-    },
+        fontFamily: 'ABeeZee_400Regular',    },
 
     boxTextInfos: {
         fontSize: 20,
-        color: '#000000'
+        color: '#000000',
+        fontFamily: 'ABeeZee_400Regular',
     },
 
     mainCardLine: {
@@ -206,7 +207,7 @@ const styles = StyleSheet.create({
     },
 
     mainPaymentTitleOption: {
-        // fontFamily: 'IBMPlexMono-Bold',
+        fontFamily: 'IBMPlexMono_700Bold',
         fontSize: 25,
         color: '#000',
     },
@@ -224,6 +225,7 @@ const styles = StyleSheet.create({
     },
 
     boxTextInfoPix: {
+        fontFamily: 'IBMPlexMono_700Bold',
         fontSize: 25,
         marginBottom: '3%',
     },
@@ -240,7 +242,7 @@ const styles = StyleSheet.create({
     },
 
     mainMethodCode: {
-        // fontFamily: 'ABeeZee-Regular',
+        fontFamily: 'ABeeZee_400Regular',
         fontSize: 20,
         color: '#726E6E',
         maxWidth: 367,
@@ -279,7 +281,7 @@ const styles = StyleSheet.create({
     },
 
     mainPaymentTitle: {
-        // fontFamily: 'ABeeZee-Regular',
+        fontFamily: 'ABeeZee_400Regular',        
         fontSize: 20,
         color: '#fff',
         marginTop: '5%',
@@ -287,7 +289,7 @@ const styles = StyleSheet.create({
     },
 
     mainPaymentText: {
-        // fontFamily: 'ABeeZee-Regular',
+        fontFamily: 'ABeeZee_400Regular',        
         fontSize: 20,
         color: '#fff',
         marginTop: '5%',
@@ -311,9 +313,7 @@ const styles = StyleSheet.create({
     },
 
     paymentBtnText: {
-        // fontFamily: 'ABeeZee-Regular',
-        fontSize: 25,
-        fontWeight: 'bold',
+        fontFamily: 'IBMPlexMono_700Bold',        fontSize: 25,
         color: '#000',
     },
 
@@ -370,4 +370,8 @@ const styles = StyleSheet.create({
         marginBottom: '10%',
         borderRadius: 5,
     },
+    paymentBtnTextDebito: {
+        fontFamily: 'IBMPlexMono_700Bold',        fontSize: 25,
+        color: '#000',
+    }
 });

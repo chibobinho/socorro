@@ -164,9 +164,8 @@ const styles = StyleSheet.create({
   },
 
   titleBicicletario: {
-    //fontFamily: '',
+    fontFamily: 'IBMPlexMono_700Bold',
     fontSize: 30,
-    fontWeight: 'bold',
     color: '#000'
   },
 
@@ -180,13 +179,12 @@ const styles = StyleSheet.create({
   },
 
   titleInfo: {
-    //fontFamily: '',
-    fontSize: 25,
+    fontFamily: 'ABeeZee_400Regular',    fontSize: 25,
     color: '#000',
   },
 
   textInfo: {
-    //fontFamily: '',
+    fontFamily: 'ABeeZee_400Regular', 
     fontSize: 18,
     color: '#000',
   },
@@ -207,9 +205,8 @@ const styles = StyleSheet.create({
 
   cardPontosText: {
     fontSize: 18,
-    fontWeight: 'bold',
     color: '#000',
     textAlign: 'center',
-    // fontFamily: 'ABeeZee-Regular'
+    fontFamily: 'IBMPlexMono_700Bold',
   },
 });

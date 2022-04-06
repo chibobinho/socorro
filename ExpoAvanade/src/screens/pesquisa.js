@@ -110,9 +110,10 @@ const styles = StyleSheet.create({
     },
     mainRecentText: {
         fontSize: 20,
-        paddingTop: 15,
+        paddingTop: 20,
         paddingLeft: 15,
-        color: '#000000'
+        color: '#000000',
+        fontFamily: 'ABeeZee_400Regular',
     },
     mainBtnText: {
         marginTop: 12,

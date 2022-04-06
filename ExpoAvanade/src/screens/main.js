@@ -91,9 +91,8 @@ const styles = StyleSheet.create({
   // estilo dos textos da navegação
   textNav: {
     fontSize: 18,
-    fontWeight: 'bold',
     color: '#000',
-    // fontFamily: 'IBMPlexMono-Bold',
+    fontFamily: 'IBMPlexMono_700Bold',
   },
 
   // estilo dos ícones da tabBar

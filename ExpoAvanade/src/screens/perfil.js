@@ -103,9 +103,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   mainHeaderText: {
-    //fontFamily: '',
-    fontSize: 36,
-    fontWeight: 'bold',
+    fontFamily: 'IBMPlexMono_700Bold',    fontSize: 36,
     color: '#333',
   },
   mainHeaderLine: {
@@ -129,14 +127,14 @@ const styles = StyleSheet.create({
     /* marginBottom: 20, */
   },
   mainBodyTitle: {
-    //fontFamily: '',
     color: '#000',
     fontSize: 25,
-    fontWeight: 'bold',
     paddingTop: 5,
     paddingBottom: 5,
   },
   mainBodyText: {
+    fontFamily: 'ABeeZee_400Regular',
+
     color: '#000',
     fontSize: 20,
   },
@@ -156,16 +154,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   btnPontosText: {
-    //fontFamily: '',
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'IBMPlexMono_700Bold',    fontSize: 18,
+
     color: '#000',
     textAlign: 'center',
   },
   btnLogoutText: {
-    //fontFamily: '',
-    fontSize: 25,
-    fontWeight: 'bold',
+    fontFamily: 'IBMPlexMono_700Bold',    fontSize: 25,
+
     color: '#000',
   },
   mainTituloSpace: {

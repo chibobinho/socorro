@@ -85,8 +85,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 34,
-    /* fontFamily: 'Open Sans', */
-    fontWeight: 'bold',
+    fontFamily: 'IBMPlexMono_700Bold',
     color: '#000',
     lineHeight: 39,
     maxWidth: 295,
@@ -128,8 +127,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   btnConfirmText: {
-    /* fontFamily: 'Open Sans', */
-    fontWeight: 'bold',
+    fontFamily: 'IBMPlexMono_700Bold',
     fontSize: 24,
     color: '#000',
   },
